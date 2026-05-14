@@ -1,0 +1,4 @@
+databaseChangeLog:
+  - include:
+      file: scripts/index-practice.sql
+      relativeToChangelogFile: true
