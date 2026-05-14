@@ -1,7 +1,10 @@
 package ru.hogwarts.school.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import jakarta.persistence.*;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
 
 import java.util.Collection;
 import java.util.Objects;
@@ -10,8 +13,7 @@ import java.util.Objects;
 public class Faculty {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "faculty_seq")
-    @SequenceGenerator(name = "faculty_seq", sequenceName = "faculty_sequence", allocationSize = 1)
+    @GeneratedValue
     private long id;
 
     @JsonProperty("name")
