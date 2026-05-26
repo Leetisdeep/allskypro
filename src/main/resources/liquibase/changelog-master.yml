@@ -1,3 +1,5 @@
 databaseChangeLog:
   - include:
-      file: liquibase/scripts/tables.sql
+      file: liquibase/changelog/0001-create-schema.yml
+
+
